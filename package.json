@@ -1,0 +1,20 @@
+{
+  "name": "aram-meta",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "build:web": "npm --workspace apps/web run build",
+    "test:web": "npm --workspace apps/web run test",
+    "preview:web": "npm --workspace apps/web run preview",
+    "dev:api": "npm --workspace apps/api run start:dev",
+    "build:api": "npm --workspace apps/api run build",
+    "start:api": "npm --workspace apps/api run start",
+    "test:api": "npm --workspace apps/api run test",
+    "test:e2e:api": "npm --workspace apps/api run test:e2e"
+  }
+}

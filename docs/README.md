@@ -8,8 +8,15 @@ Thư mục này chứa tài liệu sản phẩm, kiến trúc và kế hoạch t
 - [Sitemap](product/sitemap.md)
 - [Tuân thủ Riot](product/riot-compliance.md)
 - [Tổng quan kiến trúc](architecture/overview.md)
+- [Design ARAM Meta](design/README.md)
 - [Quy ước branch và commit](contributing/git-workflow.md)
 - [Roadmap tổng](superpowers/plans/2026-08-27-aram-meta-roadmap.md)
+
+## Tài Liệu Thiết Kế
+
+- [Định hướng thiết kế](design/design-direction.md)
+- [Design system](design/design-system.md)
+- [Layout màn hình](design/page-layouts.md)
 
 ## Tài Liệu Theo Phase
 
