@@ -1,6 +1,24 @@
 {
   "version": 1,
   "skills": {
+    "backend-patterns": {
+      "source": "affaan-m/ECC",
+      "sourceType": "github",
+      "skillPath": "skills/backend-patterns/SKILL.md",
+      "computedHash": "45bf0c6abd0549b56142690f49437bc59c7b4f55b62dc7717ef295ec6ed6617f"
+    },
+    "design-system": {
+      "source": "affaan-m/ECC",
+      "sourceType": "github",
+      "skillPath": "skills/design-system/SKILL.md",
+      "computedHash": "cf8cdf26522e767726171f3487f1179538d2aecf3f14fc4533ef220296dfc4e4"
+    },
+    "frontend-patterns": {
+      "source": "affaan-m/ECC",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-patterns/SKILL.md",
+      "computedHash": "cda7d74619e78bc6c58e7f7f4fa7a9d831ec71ae4629550e4d7b53876692e4d3"
+    },
     "writing-plans": {
       "source": "obra/superpowers",
       "sourceType": "github",

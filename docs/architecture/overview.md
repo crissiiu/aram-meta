@@ -4,6 +4,17 @@
 
 Kiến trúc phải hỗ trợ website guide ARAM trước, sau đó mở rộng sang pipeline dữ liệu, player lookup, community và desktop companion mà không phải viết lại nền tảng.
 
+## System Model
+
+Mô hình hệ thống chi tiết nằm ở [system-model.md](system-model.md). Mọi implementation task phải kế thừa các boundary này:
+
+- `apps/web` chỉ là presentation layer.
+- `apps/api` sở hữu backend API và server-side integrations.
+- `packages/shared` sở hữu DTO/constants dùng chung.
+- MySQL là durable data storage.
+- Redis là cache, queue và rate-limit coordination.
+- Riot API access luôn ở server-side.
+
 ## Thành Phần Chính
 
 - `apps/web`: frontend React + TypeScript.
@@ -15,7 +26,7 @@ Kiến trúc phải hỗ trợ website guide ARAM trước, sau đó mở rộng
 
 ## Frontend
 
-Frontend bắt buộc dùng React với TypeScript.
+Frontend bắt buộc dùng React với TypeScript. UI dùng Tailwind là chính, kế thừa token màu, spacing, radius và typography từ `docs/design/`.
 
 Framework đề xuất:
 
@@ -35,6 +46,8 @@ Backend dùng NestJS để tách module rõ:
 - Riot API client.
 - Jobs.
 - Admin/editorial sau MVP.
+
+Phase 1 scaffold bắt đầu với một NestJS app tối thiểu trong `apps/api`: root module, root controller, root service, unit test, và e2e smoke test. Scaffold tuân theo `docs/architecture/system-model.md`; database, Redis, Riot API client, và public resource modules được thêm trong các checklist item/phase sau.
 
 Backend chịu trách nhiệm:
 
